@@ -2,7 +2,7 @@ import Image from "next/image";
 import attract from '@/public/attract.png'
 import getting from '@/public/getting.png'
 import performance from '@/public/performance.png'
-import gain from '@/public/gain.png'
+import gain from '@/public/Gain.png'
 import Button from "./General/Button";
 
 const Stop = () => {
