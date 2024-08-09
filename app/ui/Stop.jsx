@@ -2,6 +2,7 @@ import Image from "next/image";
 import attract from '@/public/attract.png'
 import getting from '@/public/getting.png'
 import performance from '@/public/performance.png'
+import gain from '@/public/gain.png'
 import Button from "./General/Button";
 
 const Stop = () => {
@@ -157,7 +158,7 @@ const Stop = () => {
                 <p><span className='font-bold'>Win all patients </span> only with you Google Business Profile</p>
               </li>
             </ul>
-            <Image src={getting} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
+            <Image src={gain} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
           <div className='text-center pt-10 space-y-2'>
             <Button text={'I Want A Srategy'} />
