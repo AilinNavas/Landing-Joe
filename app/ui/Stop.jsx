@@ -44,7 +44,7 @@ const Stop = () => {
             </ul>
             <Image src={attract} alt="attract more patients" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
           </div>
-          <div className='text-center pt-10 space-y-2'>
+          <div className='text-center space-y-2'>
             <Button text={'I Want More Visibility'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
@@ -83,7 +83,7 @@ const Stop = () => {
             </ul>
             <Image src={getting} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
-          <div className='text-center pt-10 space-y-2'>
+          <div className='text-center space-y-2'>
             <Button text={'I Want More Patients'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
@@ -121,7 +121,7 @@ const Stop = () => {
             </ul>
             <Image src={performance} alt="Performance on Google" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
           </div>
-          <div className='text-center pt-10 space-y-2'>
+          <div className='text-center space-y-2'>
             <Button text={'I Want More Visibility'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
@@ -160,7 +160,7 @@ const Stop = () => {
             </ul>
             <Image src={gain} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
-          <div className='text-center pt-10 space-y-2'>
+          <div className='text-center space-y-2'>
             <Button text={'I Want A Srategy'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
