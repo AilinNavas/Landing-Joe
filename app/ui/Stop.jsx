@@ -7,10 +7,10 @@ import Button from "./General/Button";
 
 const Stop = () => {
   return (
-    <section className='stop py-20'>
+    <section className='stop py-10 md:py-16'>
       <div className='max-w-7xl px-6 mx-auto  lg:px-0 lg:max-w-5xl'>
-        <h2 className='font-extrabold text-azulTitulo text-center lg:max-w-5xl mx-auto mb-10 text-2xl md:text-3xl lg:text-4xl'>Stop losing patients</h2>
-        <p className='text-grisTexto pb-10 lg:text-xl lg:max-w-5xl mx-auto'>
+        <h2 className='font-extrabold text-azulTitulo text-center lg:max-w-5xl mx-auto mb-6  text-2xl md:text-3xl lg:text-4xl'>Stop losing patients</h2>
+        <p className='text-grisTexto pb-6  lg:text-xl lg:max-w-5xl mx-auto'>
           <span className='font-bold text-azulTitulo'>"Dentist near me" and variants count for 1-10M average monthly searches on Google in the US, </span> and it can be anything from 1,000 to 1M depending on the size of your city. This represents an existing demand that you are not capturing.</p>
 
         <div className="border-2 bg-white shadow-lg rounded-sm p-10 mb-6 flex flex-col lg:items-start">
@@ -44,7 +44,7 @@ const Stop = () => {
             </ul>
             <Image src={attract} alt="attract more patients" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
           </div>
-          <div className='text-center space-y-2'>
+          <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want More Visibility'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
@@ -83,7 +83,7 @@ const Stop = () => {
             </ul>
             <Image src={getting} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
-          <div className='text-center space-y-2'>
+          <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want More Patients'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
@@ -121,7 +121,7 @@ const Stop = () => {
             </ul>
             <Image src={performance} alt="Performance on Google" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
           </div>
-          <div className='text-center space-y-2'>
+          <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want More Visibility'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>
@@ -160,7 +160,7 @@ const Stop = () => {
             </ul>
             <Image src={gain} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
-          <div className='text-center space-y-2'>
+          <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want A Srategy'} />
             <p className='text-grisTexto'>Get personalized insights • It’s free</p>
           </div>

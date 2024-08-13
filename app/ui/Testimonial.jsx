@@ -3,9 +3,9 @@ import neal from '@/public/Neal.jpeg'
 
 const Testimonial = () => {
   return (
-    <section className='testimonial py-20'>
+    <section className='testimonial py-10 md:py-16'>
       <div className='max-w-7xl px-6 mx-auto lg:px-0 lg:max-w-5xl'>
-        <h2 className='font-extrabold text-azulTitulo text-center lg:max-w-5xl mx-auto mb-10 text-2xl md:text-3xl lg:text-4xl'>How many more patients would come to you with a 550% increase in Google appearances?</h2>
+        <h2 className='font-extrabold text-azulTitulo text-center lg:max-w-5xl mx-auto mb-6 text-2xl md:text-3xl lg:text-4xl'>How many more patients would come to you with a 550% increase in Google appearances?</h2>
         <p className='text-grisTexto pb-10 lg:text-xl lg:max-w-5xl mx-auto'>
           <span className='font-bold text-azulTitulo'>See how we achieved outstanding results </span>  with a practice in the position 40th of Google Search results. Now they have patients that find them online and choose their practice over others.</p>
         <div className='pb-10 flex flex-col space-y-10 lg:space-y-0 lg:flex-row'>
