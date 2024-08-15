@@ -12,11 +12,11 @@ const Testimonial = () => {
           <div className='lg:w-1/2'>
           
             <div className="flex flex-col items-center justify-center lg:mx-10">
-            <Image src={neal} alt="Neal-Horn" className="w-20 rounded-full -mb-4 z-10" />
-            <div className="flex flex-col items-center p-4 shadow-md rounded-sm border-[rgba(0,0,0,0.13)] border-[1px] border-t-0 bg-white">
+            <Image src={neal} alt="Neal-Horn" className="w-24 rounded-md -mb-8 z-10" />
+            <div className="flex flex-col items-center p-8 shadow-md rounded-sm border-[rgba(0,0,0,0.13)] border-[1px] border-t-0 bg-white">
               <h4 className="font-bold mt-2 lg:text-lg">Dr. Neal Horn</h4>
               <span className="mb-4 lg:text-lg">SOUTHSIDE ENDODONTICS</span>
-              <p className=" text-center lg:text-lg">“Joel has been a valuable asset to my endodontic practice. He skills with SEO have constantly positioned my practice at the top of the search results. I would not hesitate to recommend Joel to anyone looking to better position their practice through digital marketing.”</p>
+              <p className=" text-left lg:text-lg">“Joel has been a valuable asset to my endodontic practice. <span className="underline underline-offset-2 decoration-celestePrincipal">He skills with SEO have constantly positioned my practice at the top of the search results.</span> I would not hesitate to recommend Joel to anyone looking to better position their practice through digital marketing.”</p>
             </div>
             </div>
 
@@ -26,7 +26,7 @@ const Testimonial = () => {
 
           <div className='lg:w-1/2 flex flex-col justify-center'>
             <ul className='space-y-2 lg:space-y-4 lg:text-xl'>
-              <li className='flex items-start lg:items-center'>
+              <li className='flex items-start lg:items-center '>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>

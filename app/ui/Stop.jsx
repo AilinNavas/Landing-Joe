@@ -8,15 +8,15 @@ import Button from "./General/Button";
 const Stop = () => {
   return (
     <section className='stop py-10 md:py-16'>
-      <div className='max-w-7xl px-6 mx-auto  lg:px-0 lg:max-w-5xl'>
+      <div className='max-w-7xl px-6 mx-auto lg:px-0 lg:max-w-5xl'>
         <h2 className='font-extrabold text-azulTitulo text-center lg:max-w-5xl mx-auto mb-6  text-2xl md:text-3xl lg:text-4xl'>Stop losing patients</h2>
-        <p className='text-grisTexto pb-6  lg:text-xl lg:max-w-5xl mx-auto'>
+        <p className='text-grisTexto pb-6 lg:text-xl lg:max-w-5xl mx-auto'>
           <span className='font-bold text-azulTitulo'>"Dentist near me" and variants count for 1-10M average monthly searches on Google in the US, </span> and it can be anything from 1,000 to 1M depending on the size of your city. This represents an existing demand that you are not capturing.</p>
 
         <div className="border-2 bg-white shadow-lg rounded-sm p-10 mb-6 flex flex-col lg:items-start">
           <h4 className="font-extrabold text-celestePrincipal text-2xl lg:text-3xl pb-10 md:text-center lg:text-left lg:max-w-md lg:pb-4">Attract more patients in your service area</h4>
           <div className="flex flex-col lg:flex-row items-center">
-            <ul className='space-y-2 lg:space-y-4 lg:w-1/2'>
+            <ul className='space-y-2 lg:space-y-4 lg:w-1/2 lg:text-xl'>
               <li className='flex items-start lg:items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -55,7 +55,7 @@ const Stop = () => {
           <h4 className="font-extrabold text-celestePrincipal text-2xl md:text-3xl pb-10 md:text-center lg:text-left lg:max-w-md lg:pb-4">Have more patients getting in touch daily</h4>
           <div className="flex flex-col-reverse lg:flex-row-reverse items-center">
 
-            <ul className='space-y-2 lg:space-y-4 lg:w-1/2'>
+            <ul className='space-y-2 lg:space-y-4 lg:w-1/2 lg:text-xl'>
               <li className='flex items-start lg:items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -66,13 +66,13 @@ const Stop = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>
-                <p><span className='font-bold'>Increase messages</span>made from your Business Profile</p>
+                <p><span className='font-bold'>Increase messages</span> made from your Business Profile</p>
               </li>
               <li className='flex items-start lg:items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>
-                <p><span className='font-bold'>Increase appointments</span>scheduled on your website </p>
+                <p><span className='font-bold'>Increase appointments</span> scheduled on your website </p>
               </li>
               <li className='flex items-start lg:items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
@@ -93,7 +93,7 @@ const Stop = () => {
         <div className="border-2 bg-white shadow-lg rounded-sm p-10 mt-6 flex flex-col lg:items-start">
           <h4 className="font-extrabold text-celestePrincipal text-2xl lg:text-3xl pb-10 md:text-center lg:text-left lg:max-w-md lg:pb-4">Turn web visitors into patients consistently</h4>
           <div className="flex flex-col lg:flex-row items-center">
-            <ul className='space-y-2 lg:space-y-4 lg:w-1/2'>
+            <ul className='space-y-2 lg:space-y-4 lg:w-1/2 lg:text-xl'>
               <li className='flex items-start lg:items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -132,7 +132,7 @@ const Stop = () => {
           <h4 className="font-extrabold text-celestePrincipal text-2xl md:text-3xl pb-10 md:text-center lg:text-left lg:max-w-md lg:pb-4">Gain patients’ trust and beat competitors</h4>
           <div className="flex flex-col-reverse lg:flex-row-reverse items-center">
 
-            <ul className='space-y-2 lg:space-y-4 lg:w-1/2'>
+            <ul className='space-y-2 lg:space-y-4 lg:w-1/2 lg:text-xl'>
               <li className='flex items-start lg:items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
