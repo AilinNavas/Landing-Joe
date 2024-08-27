@@ -12,6 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async> </script>
+      </head>
       <body className={nunito.className}>{children}</body>
     </html>
   );

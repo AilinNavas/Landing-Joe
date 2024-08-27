@@ -16,7 +16,7 @@ const Testimonial = () => {
             <div className="flex flex-col items-center p-8 shadow-md rounded-sm border-[rgba(0,0,0,0.13)] border-[1px] border-t-0 bg-white">
               <h4 className="font-bold mt-2 lg:text-lg">Dr. Neal Horn</h4>
               <span className="mb-4 lg:text-lg">SOUTHSIDE ENDODONTICS</span>
-              <p className=" text-left lg:text-lg">“Joel has been a valuable asset to my endodontic practice. <span className="underline underline-offset-2 decoration-celestePrincipal">He skills with SEO have constantly positioned my practice at the top of the search results.</span> I would not hesitate to recommend Joel to anyone looking to better position their practice through digital marketing.”</p>
+              <p className=" text-left lg:text-lg">“Joel has been a valuable asset to my endodontic practice. <span className="underline underline-offset-4 decoration-2 decoration-celestePrincipal">He skills with SEO have constantly positioned my practice at the top of the search results.</span> I would not hesitate to recommend Joel to anyone looking to better position their practice through digital marketing.”</p>
             </div>
             </div>
 

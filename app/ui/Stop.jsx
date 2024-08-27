@@ -116,7 +116,7 @@ const Stop = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 flex-none mr-[0.375rem] lg:w-10 lg:h-8 lg:mr-2 text-celestePrincipal">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>
-                <p><span className='font-bold'>Increase calls and appointments</span>with strategic structure</p>
+                <p><span className='font-bold'>Increase calls and appointments</span> with strategic structure</p>
               </li>
             </ul>
             <Image src={performance} alt="Performance on Google" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />

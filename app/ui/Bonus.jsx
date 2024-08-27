@@ -39,7 +39,7 @@ const Bonus = () => {
       </div>
       
 
-      <div className='text-center pt-10 space-y-2'>
+      <div className='text-center pt-24 space-y-2'>
         <Button text={'Boost My Practice Today'} />
         <p className='text-grisTexto'>Get personalized insights • It’s free</p>
       </div>
