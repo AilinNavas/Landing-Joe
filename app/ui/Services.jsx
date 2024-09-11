@@ -1,3 +1,7 @@
+import Image from "next/image"
+import contentMarketing from '@/public/services/1.gif'
+import localMarketing from '@/public/services/2.gif'
+import reputationManagement from '@/public/services/3.gif'
 
 const Services = () => {
   return (
@@ -43,42 +47,73 @@ const Services = () => {
         </div>
 
         {/* Information Services Container */}
-        <div className='grid grid-cols-1 space-y-12 py-12'>
+        <div className='grid grid-cols-1 space-y-12 pt-12 lg:py-12 bg-white px-8'>
 
+          <div className=" flex flex-col lg:flex-row lg:items-center">
+            <div className=''>
+              <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Local Marketing Services:</span>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-4'>Website Optimization:</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>🌐 Optimize for local search terms to attract patients</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2 '>Google Business Profile Optimization</h6>
+              <ul className='text-grisTexto  lg:text-xl'>
+                <li>📈 Increase patient visibility</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Social Media Profile Optimization</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📱 Ensure visibility when patients are scrolling</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Content Production</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📝 Tailored for all service locations</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Performance Reports</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📊 Website rankings on Google search results</li>
+                <li>📊 Google Business Profile rankings on Google search results</li>
+                <li>📊 Google Business Profile rankings on Google Maps</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Premium Reports</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📍 Google Maps performance for multiple locations</li>
+                <li>🏆 Competitor comparison for performance analysis</li>
+              </ul>
+             
+            </div>
+            <div>
+                <Image src={contentMarketing} className="lg:max-w-md" alt="gif-service-content-marketing" />
+              </div>
 
-          <div className='px-2 '>
-          <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Local Marketing Services:</span>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-4'>Website Optimization:</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>🌐 Optimize for local search terms to attract patients</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2 '>Google Business Profile Optimization</h6>
-            <ul className='text-grisTexto  lg:text-xl'>
-              <li>📈 Increase patient visibility</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Social Media Profile Optimization</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📱 Ensure visibility when patients are scrolling</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Content Production</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📝 Tailored for all service locations</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Performance Reports</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📊 Website rankings on Google search results</li>
-              <li>📊 Google Business Profile rankings on Google search results</li>
-              <li>📊 Google Business Profile rankings on Google Maps</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Premium Reports</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📍 Google Maps performance for multiple locations</li>
-              <li>🏆 Competitor comparison for performance analysis</li>
-            </ul>
           </div>
 
+        
+
+          <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between">
           <div className='px-2 '>
-          <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Reputation Management Services:</span>
+            <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Content Marketing Services:</span>
+            <h6 className='font-bold text-azulTitulo  lg:text-xl mt-4'>Engage and Attract Visitors</h6>
+            <ul className='text-grisTexto lg:text-xl'>
+              <li>🎯 Content assets optimized for engagement</li>
+              <li>📣 Create awareness in your community</li>
+              <li>💬 Respond to patients' common questions</li>
+              <li>🤝 Build trust with local residents</li>
+              <li>🔍 Invite visitors to take action</li>
+              <li>🏅 Showcase why you are the best choice</li>
+              <li>📚 Position yourself as an authority</li>
+              <li>🏠 Resonate with residents</li>
+              <li>🌟 Build a solid online reputation</li>
+            </ul>
+            </div>
+          <div>
+                <Image src={reputationManagement} className="lg:max-w-md" alt="gif-service-local-marketing" />
+              </div>
+
+          </div>
+
+          <div className=" flex flex-col lg:flex-row lg:items-center">
+          <div className='px-2'>
+            <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Reputation Management Services:</span>
             <h6 className='font-bold text-azulTitulo lg:text-xl  mt-4 '>Increase 5-Star Reviews</h6>
             <ul className='text-grisTexto lg:text-xl'>
               <li>⭐ Google Business Profile and Facebook Page reviews</li>
@@ -104,26 +139,14 @@ const Services = () => {
               <li>🎨 Create visually appealing content for a more engaging user experience</li>
 
             </ul>
+        
 
           </div>
+          <div>
+                <Image src={localMarketing} className="lg:max-w-md " alt="gif-service-local-marketing"/>
+              </div>
 
-          <div className='px-2'>
-            <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Content Marketing Services:</span>
-            <h6 className='font-bold text-azulTitulo  lg:text-xl mt-4'>Engage and Attract Visitors</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>🎯 Content assets optimized for engagement</li>
-              <li>📣 Create awareness in your community</li>
-              <li>💬 Respond to patients' common questions</li>
-              <li>🤝 Build trust with local residents</li>
-              <li>🔍 Invite visitors to take action</li>
-              <li>🏅 Showcase why you are the best choice</li>
-              <li>📚 Position yourself as an authority</li>
-              <li>🏠 Resonate with residents</li>
-              <li>🌟 Build a solid online reputation</li>
-            </ul>
           </div>
-
-
 
         </div>
 
