@@ -1,4 +1,5 @@
 import Accordion from "./General/Accodion"
+import Button from "./General/Button";
 
 const faqItems = [
   {
@@ -46,6 +47,10 @@ const Faqs = () => {
       <h2 className="font-extrabold text-center mb-8 text-azulTitulo  text-2xl md:text-3xl lg:text-4xl">FAQs</h2>
       <Accordion items={faqItems} />
     </div>
+      <div className='text-center pt-4 md:pt-10 space-y-2'>
+        <Button text={'Boost My Practice Today'} />
+        <p className='text-grisTexto'>Get personalized insights • It’s free</p>
+        </div>
   </section >
   )
 }
