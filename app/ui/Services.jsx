@@ -2,6 +2,7 @@ import Image from "next/image"
 import contentMarketing from '@/public/services/1.gif'
 import localMarketing from '@/public/services/2.gif'
 import reputationManagement from '@/public/services/3.gif'
+import Button from "./General/Button"
 
 const Services = () => {
   return (
@@ -79,72 +80,85 @@ const Services = () => {
                 <li>📍 Google Maps performance for multiple locations</li>
                 <li>🏆 Competitor comparison for performance analysis</li>
               </ul>
-             
+
             </div>
             <div>
-                <Image src={contentMarketing} className="lg:max-w-md" alt="gif-service-content-marketing" />
+              <Image src={contentMarketing} unoptimized className="lg:max-w-md" alt="gif-service-content-marketing" />
+              <div className='text-center space-y-2'>
+                <Button text={'Boost My Practice Today'} />
+                <p className='text-grisTexto'>Get personalized insights • It’s free</p>
               </div>
+            </div>
 
           </div>
 
-        
+
 
           <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between">
-          <div className='px-2 '>
-            <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Content Marketing Services:</span>
-            <h6 className='font-bold text-azulTitulo  lg:text-xl mt-4'>Engage and Attract Visitors</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>🎯 Content assets optimized for engagement</li>
-              <li>📣 Create awareness in your community</li>
-              <li>💬 Respond to patients' common questions</li>
-              <li>🤝 Build trust with local residents</li>
-              <li>🔍 Invite visitors to take action</li>
-              <li>🏅 Showcase why you are the best choice</li>
-              <li>📚 Position yourself as an authority</li>
-              <li>🏠 Resonate with residents</li>
-              <li>🌟 Build a solid online reputation</li>
-            </ul>
+            <div className='px-2 '>
+              <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Content Marketing Services:</span>
+              <h6 className='font-bold text-azulTitulo  lg:text-xl mt-4'>Engage and Attract Visitors</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>🎯 Content assets optimized for engagement</li>
+                <li>📣 Create awareness in your community</li>
+                <li>💬 Respond to patients' common questions</li>
+                <li>🤝 Build trust with local residents</li>
+                <li>🔍 Invite visitors to take action</li>
+                <li>🏅 Showcase why you are the best choice</li>
+                <li>📚 Position yourself as an authority</li>
+                <li>🏠 Resonate with residents</li>
+                <li>🌟 Build a solid online reputation</li>
+              </ul>
             </div>
-          <div>
-                <Image src={reputationManagement} className="lg:max-w-md" alt="gif-service-local-marketing" />
+            <div>
+              <Image src={reputationManagement} unoptimized className="lg:max-w-md" alt="gif-service-local-marketing" />
+              <div className='text-center space-y-2'>
+                <Button text={'Boost My Practice Today'} />
+                <p className='text-grisTexto'>Get personalized insights • It’s free</p>
               </div>
+            </div>
 
           </div>
 
           <div className=" flex flex-col lg:flex-row lg:items-center">
-          <div className='px-2'>
-            <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Reputation Management Services:</span>
-            <h6 className='font-bold text-azulTitulo lg:text-xl  mt-4 '>Increase 5-Star Reviews</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>⭐ Google Business Profile and Facebook Page reviews</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2 '>Monitor and Respond</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📆 Daily monitoring of Google Business Profile reviews</li>
-              <li>📈 Generate custom reports with detailed analytics</li>
-              <li>🕒 Respond professionally and authentically within 24 hours</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Showcase Testimonials</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>💬 Prominently display customer testimonials on your website</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Optimize Interactions</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📊 Improve interactions with the latest Google Business Profile features</li>
-              <li>💡 Develop strategies to attract patients using old reviews</li>
-            </ul>
-            <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Engaging Content</h6>
-            <ul className='text-grisTexto lg:text-xl'>
-              <li>📰 Share informative content weekly</li>
-              <li>🎨 Create visually appealing content for a more engaging user experience</li>
+            <div className='px-2'>
+              <span className='font-bold text-azulTitulo text-xl md:text-2xl underline underline-offset-4 decoration-azulTitulo'>Reputation Management Services:</span>
+              <h6 className='font-bold text-azulTitulo lg:text-xl  mt-4 '>Increase 5-Star Reviews</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>⭐ Google Business Profile and Facebook Page reviews</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2 '>Monitor and Respond</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📆 Daily monitoring of Google Business Profile reviews</li>
+                <li>📈 Generate custom reports with detailed analytics</li>
+                <li>🕒 Respond professionally and authentically within 24 hours</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Showcase Testimonials</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>💬 Prominently display customer testimonials on your website</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Optimize Interactions</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📊 Improve interactions with the latest Google Business Profile features</li>
+                <li>💡 Develop strategies to attract patients using old reviews</li>
+              </ul>
+              <h6 className='font-bold text-azulTitulo lg:text-xl mt-2'>Engaging Content</h6>
+              <ul className='text-grisTexto lg:text-xl'>
+                <li>📰 Share informative content weekly</li>
+                <li>🎨 Create visually appealing content for a more engaging user experience</li>
 
-            </ul>
-        
+              </ul>
 
-          </div>
-          <div>
-                <Image src={localMarketing} className="lg:max-w-md " alt="gif-service-local-marketing"/>
+
+            </div>
+            <div>
+              <Image src={localMarketing} unoptimized className="lg:max-w-md " alt="gif-service-local-marketing" />
+              <div className='text-center pt-4 md:pt-10 space-y-2'>
+                <Button text={'Boost My Practice Today'} />
+                <p className='text-grisTexto'>Get personalized insights • It’s free</p>
               </div>
+
+            </div>
 
           </div>
 
