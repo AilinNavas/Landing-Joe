@@ -48,6 +48,7 @@
   export async function POST(req) {
     try {
       const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS); // Cargar las credenciales desde las variables de entorno
+      console.log('Credenciales de Google:', credentials);
   
       const auth = new google.auth.GoogleAuth({
         credentials,
