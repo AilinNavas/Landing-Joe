@@ -8,11 +8,19 @@ export const InfoForm = () => {
             <h4 className='font-black text-azulTitulo text-3xl'>Get a Cost-effective Marketing Strategy!</h4>
             <p className='font-black text-azulTitulo uppercase'>100% No–Risk Free Trial</p>
             <ul>
+<<<<<<< HEAD
               <li className='flex text-grisTexto'><Image src={check} width={20} height={20} alt='icon-check' className='mr-2' />
                 Pay NOTHING for the first 30-days</li>
               <li className='flex text-grisTexto'><Image src={check} width={20} height={20} alt='icon-check' className='mr-2' />
                 Cancel anytime, hassle-free</li>
               <li className='flex text-grisTexto'><Image src={check} width={20} height={20} alt='icon-check' className='mr-2' />No long-term contracts</li>
+=======
+              <li className='flex text-grisTexto'><Image src={check} width={20} height={20} alt='icon' className='mr-2' />
+                Pay NOTHING for the first 30-days</li>
+              <li className='flex text-grisTexto'><Image src={check} width={20} height={20} alt='icon' className='mr-2' />
+                Cancel anytime, hassle-free</li>
+              <li className='flex text-grisTexto'><Image src={check} width={20} height={20} alt='icon' className='mr-2' />No long-term contracts</li>
+>>>>>>> 14ca460d432be48af34351fede21a742ad5a21c8
             </ul>
 
             <div className='border-4 border-[text-grisTexto] p-4'>
