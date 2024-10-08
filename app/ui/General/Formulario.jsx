@@ -1,3 +1,4 @@
+
 'use client';
 import { useState } from 'react';
 import axios from 'axios';
@@ -42,6 +43,7 @@ const Formulario = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Primera validación de 'budget'
     if (!formData.budget) {
       setFormStatus('Gracias por ponerse en contacto con nosotros.');
       setShowForm(false);
@@ -49,20 +51,28 @@ const Formulario = () => {
         router.push('/');
       }, 2000);
     } else {
-      setShowCalendar(true);
+      setShowCalendar(true); // Mostrar el calendario solo si budget es true
     }
   };
 
-
   const handleFinalSubmit = async () => {
+    // Validación de 'budget' antes de enviar el formulario
+    if (!formData.budget) {
+      setFormStatus('Gracias por ponerse en contacto con nosotros.');
+      setShowForm(false);
+      setTimeout(() => {
+        router.push('/');
+      }, 2000);
+      return; // Asegurarse de que no se ejecute el resto de la función
+    }
+
     if (!formData.appointment) {
       setFormStatus('Seleccione una fecha y hora para la reunión.');
       return;
     }
 
-    console.log('Datos que se enviarán al backend:', formData); // Agregar este log para verificar los datos
-
     try {
+      console.log('Datos que se enviarán al backend:', formData);
       const response = await axios.post('/api/submit-form', formData);
       setFormStatus('Formulario enviado correctamente. En breve nos pondremos en contacto con usted!');
       setShowForm(false);
@@ -85,6 +95,7 @@ const Formulario = () => {
               <form onSubmit={handleSubmit} method="POST" className="bg-white p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl text-azulTitulo font-black mb-4">Schedule your FREE Consultation</h2>
 
+                {/* Nombre */}
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-sm font-medium text-grisTexto">Name:</label>
                   <input
@@ -98,6 +109,7 @@ const Formulario = () => {
                   />
                 </div>
 
+                {/* Email */}
                 <div className="mb-4">
                   <label htmlFor="email" className="block text-sm font-medium text-grisTexto">E-mail:</label>
                   <input
@@ -111,6 +123,7 @@ const Formulario = () => {
                   />
                 </div>
 
+                {/* Nombre de la empresa/práctica */}
                 <div className="mb-4">
                   <label htmlFor="practiceName" className="block text-sm font-medium text-grisTexto">Practice name:</label>
                   <input
@@ -124,6 +137,7 @@ const Formulario = () => {
                   />
                 </div>
 
+                {/* Checkbox de presupuesto */}
                 <div className="mb-4 flex items-center">
                   <input
                     type="checkbox"
@@ -138,6 +152,7 @@ const Formulario = () => {
                   </label>
                 </div>
 
+                {/* Botón para mostrar el calendario si budget es true */}
                 {!showCalendar && (
                   <button
                     type="submit"
@@ -147,11 +162,12 @@ const Formulario = () => {
                   </button>
                 )}
 
+                {/* Mostrar el calendario si budget es true */}
                 {showCalendar && (
                   <div className="mt-4">
                     <h3 className="text-xl font-semibold mb-2 text-grisTexto">Select day and time</h3>
                     <div className="flex items-center">
-                      <Image src={calendary} width={28} className="mr-2 opacity-80" alt='calendary-icon' />
+                      <Image src={calendary} width={28} className="mr-2 opacity-80" alt="calendary-icon" />
                       <DatePicker
                         selected={formData.appointment}
                         onChange={(date) => setFormData((prevData) => ({ ...prevData, appointment: date }))}
@@ -161,8 +177,11 @@ const Formulario = () => {
                         dateFormat="Pp"
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-celesteSecundario"
                         placeholderText="Select day and time"
+                        minDate={new Date(Date.now() + 48 * 60 * 60 * 1000)} // 48 horas en milisegundos
                       />
+
                     </div>
+
                     <div className="mb-4">
                       <label htmlFor="timezone" className="block text-sm font-medium text-grisTexto">Timezone:</label>
                       <select
@@ -173,7 +192,7 @@ const Formulario = () => {
                         className="mt-1 block w-full px-3 py-2 border text-grisTexto border-gray-300 rounded-md focus:outline-none focus:border-celesteSecundario"
                         required
                       >
-                        <option value="" disabled>-- Select a timezone --</option> {/* Opción por defecto deshabilitada */}
+                        <option value="" disabled>-- Select a timezone --</option>
                         <option value="America/New_York">Eastern Time (ET) - New York</option>
                         <option value="America/Chicago">Central Time (CT) - Chicago</option>
                         <option value="America/Denver">Mountain Time (MT) - Denver</option>
@@ -184,21 +203,25 @@ const Formulario = () => {
                       </select>
                     </div>
 
-                    <div className="my-4 flex items-center">
+                    {/* Checkbox de compromiso */}
+                    <div className="flex items-center mb-4">
                       <input
                         type="checkbox"
-                        id="commitment"
-                        name="commitment"
+                        id="finalConfirmation"
+                        name="finalConfirmation"
+                        onChange={handleChange}
                         className="h-4 w-4 text-celestePrincipal focus:ring-cyan-500 border-gray-300 rounded"
+                        required
                       />
-                      <label htmlFor="commitment" className="ml-2 text-sm text-grisTexto">
-                        I will show up on time
+                      <label htmlFor="finalConfirmation" className="ml-2 text-sm text-grisTexto">
+                        I confirm my commitment to invest after the trial
                       </label>
                     </div>
 
                     <button
-                      className="w-full mt-4 text-center px-4 py-2 text-lg font-extrabold rounded-sm shadow-sm text-white bg-celestePrincipal hover:bg-celesteSecundario border-[1px] border-[rgba(0,0,0,0.13)] transition duration-150 ease-in-out"
+                      type="button"
                       onClick={handleFinalSubmit}
+                      className="w-full text-center px-4 py-2 text-lg font-extrabold rounded-sm shadow-sm text-white bg-celestePrincipal hover:bg-celesteSecundario border-[1px] border-[rgba(0,0,0,0.13)] transition duration-150 ease-in-out"
                     >
                       Confirm Appointment
                     </button>
@@ -206,9 +229,7 @@ const Formulario = () => {
                 )}
               </form>
             ) : (
-              <div className="p-6 bg-white rounded-lg shadow-lg border border-celestePrincipal">
-                <p className="text-center text-lg font-bold text-azulTitulo">{formStatus}</p>
-              </div>
+              <p className="text-center text-lg text-grisTexto">{formStatus}</p>
             )}
           </div>
           <InfoForm />
@@ -219,3 +240,5 @@ const Formulario = () => {
 };
 
 export default Formulario;
+
+
