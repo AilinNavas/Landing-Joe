@@ -1,11 +1,11 @@
 import Image from "next/image"
 import Button from "./General/Button"
-import one from '@/public/one.png'
-import two from '@/public/two.png'
-import top1 from '@/public/top-1.jpg'
-import performance1 from '@/public/performance1.png'
-import performance2 from '@/public/performance2.png'
-import performance3 from '@/public/performance3.png'
+import one from '@/public/one.webp'
+import two from '@/public/two.webp'
+import top1 from '@/public/top-1.webp'
+import performance1 from '@/public/performance1.webp'
+import performance2 from '@/public/performance2.webp'
+import performance3 from '@/public/performance3.webp'
 
 
 
@@ -19,15 +19,15 @@ const Results = () => {
         <div className="my-6">
           <h4 className='text-azulTitulo font-bold text-lg lg:text-xl'>DENTAL PRACTICE INCREASED 40 POSITIONS ON GOOGLE</h4>
           <p className='text-grisTexto mb-2 lg:text-lg'>Southside Endodontics scaled to position 9th in only 2 months.</p>
-          <Image src={one} alt="result" className="border border-celestePrincipal rounded-md" />
+          <Image src={one} alt="result" quality={80} className="border border-celestePrincipal rounded-md" />
           <p className='text-grisTexto my-2 lg:text-lg'>They also increased their practice’s visibility dramatically.</p>
-          <Image src={two} alt="result" className="border border-celestePrincipal rounded-md" />
+          <Image src={two} alt="result" quality={80} className="border border-celestePrincipal rounded-md" />
         </div>
 
         <div className="my-12">
           <h4 className='text-azulTitulo font-bold text-lg lg:text-xl'>GOOGLE BUSINESS PROFILE RANKING 1° IN  LOCAL SEARCH  RESULTS</h4>
           <p className='text-grisTexto my-2 lg:text-lg'>They outranked ALL competitors for “endodontist near me”, securing the top 1 position across several locations.</p>
-          <Image src={top1} alt="result" className="border border-celestePrincipal rounded-md" />
+          <Image src={top1} alt="result" quality={80} className="border border-celestePrincipal rounded-md" />
           <p className='text-grisTexto mt-2 lg:text-lg'>Each circle represents a location and the number says your ranking for that location and given keyword.</p>
         </div>
 
@@ -35,9 +35,9 @@ const Results = () => {
           <h4 className='text-azulTitulo font-bold text-lg lg:text-xl'>GOOGLE BUSINESS PROFILE GETTING MORE PATIENTS THROUGH INCREASED VISIBILITY</h4>
           <p className='text-grisTexto my-2 lg:text-lg'>After our marketing efforts, we saw an insane improvement in their Google Business Profile performance.</p>
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Image src={performance1} alt="result1" className="border border-celestePrincipal rounded-md w-full md:max-w-xs" />
-            <Image src={performance2} alt="result2" className="border border-celestePrincipal rounded-md w-full md:max-w-xs" />
-            <Image src={performance3} alt="result3" className="border border-celestePrincipal rounded-md w-full md:max-w-xs" />
+            <Image src={performance1} alt="result1" quality={80} className="border border-celestePrincipal rounded-md w-full md:max-w-xs" />
+            <Image src={performance2} alt="result2" quality={80} className="border border-celestePrincipal rounded-md w-full md:max-w-xs" />
+            <Image src={performance3} alt="result3" quality={80} className="border border-celestePrincipal rounded-md w-full md:max-w-xs" />
           </div>
         </div>
         <div className='text-center pt-4 md:pt-10 space-y-2'>

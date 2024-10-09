@@ -83,7 +83,7 @@ const Services = () => {
 
             </div>
             <div>
-              <Image src={contentMarketing} unoptimized className="lg:max-w-md" alt="gif-service-content-marketing" />
+              <Image src={contentMarketing} unoptimized quality={80} className="lg:max-w-md" alt="gif-service-content-marketing" />
               <div className='text-center space-y-2'>
                 <Button text={'Boost My Practice Today'} />
                 <p className='text-grisTexto'>Get personalized insights • It’s free</p>
@@ -111,7 +111,7 @@ const Services = () => {
               </ul>
             </div>
             <div>
-              <Image src={reputationManagement} unoptimized className="lg:max-w-md" alt="gif-service-local-marketing" />
+              <Image src={reputationManagement} unoptimized quality={80} className="lg:max-w-md" alt="gif-service-local-marketing" />
               <div className='text-center space-y-2'>
                 <Button text={'Boost My Practice Today'} />
                 <p className='text-grisTexto'>Get personalized insights • It’s free</p>
@@ -152,7 +152,7 @@ const Services = () => {
 
             </div>
             <div>
-              <Image src={localMarketing} unoptimized className="lg:max-w-md " alt="gif-service-local-marketing" />
+              <Image src={localMarketing} unoptimized quality={80} className="lg:max-w-md " alt="gif-service-local-marketing" />
               <div className='text-center pt-4 md:pt-10 space-y-2'>
                 <Button text={'Boost My Practice Today'} />
                 <p className='text-grisTexto'>Get personalized insights • It’s free</p>

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import attract from '@/public/attract.png'
-import getting from '@/public/getting.png'
-import performance from '@/public/performance.png'
-import gain from '@/public/Gain.png'
+import attract from '@/public/attract.webp'
+import getting from '@/public/getting.webp'
+import performance from '@/public/performance.webp'
+import gain from '@/public/Gain.webp'
 import Button from "./General/Button";
 
 const Stop = () => {
@@ -42,7 +42,7 @@ const Stop = () => {
                 <p>Become the go-to specialist for <span className='font-bold'> “pediatric dentist”</span></p>
               </li>
             </ul>
-            <Image src={attract} alt="attract more patients" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
+            <Image src={attract} alt="attract more patients" quality={80} className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
           </div>
           <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want More Visibility'} />
@@ -81,7 +81,7 @@ const Stop = () => {
                 <p><span className='font-bold'>See more patients</span> reaching out with inquiries</p>
               </li>
             </ul>
-            <Image src={getting} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
+            <Image src={getting} alt="attract more patients" quality={80} className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
           <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want More Patients'} />
@@ -119,7 +119,7 @@ const Stop = () => {
                 <p><span className='font-bold'>Increase calls and appointments</span> with strategic structure</p>
               </li>
             </ul>
-            <Image src={performance} alt="Performance on Google" className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
+            <Image src={performance} alt="Performance on Google" quality={80}  className=" mt-10 md:px-20 lg:mt-0 lg:pl-4 lg:w-1/2" />
           </div>
           <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want More Visibility'} />
@@ -158,7 +158,7 @@ const Stop = () => {
                 <p><span className='font-bold'>Win all patients </span> only with you Google Business Profile</p>
               </li>
             </ul>
-            <Image src={gain} alt="attract more patients" className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
+            <Image src={gain} alt="attract more patients" quality={80} className=" mb-10 md:px-20 lg:mb-0 lg:pr-4 lg:w-1/2" />
           </div>
           <div className='text-center space-y-2 mt-10'>
             <Button text={'I Want A Srategy'} />

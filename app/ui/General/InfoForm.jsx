@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import check from '@/public/check.svg'
-import neal from '@/public/Neal.jpeg'
+import neal from '@/public/Neal.webp'
 
 export const InfoForm = () => {
   return (

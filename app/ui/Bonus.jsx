@@ -13,13 +13,13 @@ const Bonus = () => {
         <h6 className='text-azulTitulo font-extrabold text-lg lg:text-xl py-2'><span className="text-celestePrincipal">#BONUS 1</span> →  Branded Media Assets (5)</h6>
         <p className='text-grisTexto mb-2 lg:text-xl'>Distinctive branding, including consistent colors, logos, and design elements, enhances brand recognition and makes a dental practice more memorable to potential patients, setting it apart from competitors</p>
         <div className="flex flex-col items-center md:flex-row md:justify-evenly ">
-          <Image src={bonus1} alt="bonus-1" unoptimized  className="md:w-[600px] lg:w-[800px]" />
+          <Image src={bonus1} alt="bonus-1" unoptimized quality={80}  className="md:w-[600px] lg:w-[800px]" />
         </div>
 
         <h6 className='text-azulTitulo font-extrabold text-lg lg:text-xl py-2'><span className="text-celestePrincipal">#BONUS 2</span> →  Social Media Posts (5)</h6>
         <p className='text-grisTexto mb-2 lg:text-xl'>Using location-specific hashtags and local keywords helps ensure that the content reaches people in the vicinity who may be looking for dental services</p>
         <div className="flex flex-col items-center md:flex-row md:justify-evenly ">
-        <Image src={bonus2} unoptimized  alt="bonus-2"  />
+        <Image src={bonus2} unoptimized quality={80}  alt="bonus-2"  />
        
         </div>
 
@@ -27,7 +27,7 @@ const Bonus = () => {
         <h6 className='text-azulTitulo font-extrabold text-lg lg:text-xl py-2'><span className="text-celestePrincipal">#BONUS 3</span> →  Email Marketing Campaign (1)</h6>
         <p className='text-grisTexto mb-2 lg:text-xl'>Keep the practice top-of-mind for existing patients, encouraging them to schedule regular check-ups and appointments</p>
         <div className="flex flex-col items-center ">
-        <Image src={bonus3} alt="bonus-3" unoptimized  className="md:w-[600px] lg:w-[800px]"/>
+        <Image src={bonus3} alt="bonus-3" unoptimized quality={80}  className="md:w-[600px] lg:w-[800px]"/>
        
         </div>
 

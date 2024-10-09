@@ -1,5 +1,5 @@
 import Image from "next/image"
-import neal from '@/public/Neal.jpeg'
+import neal from '@/public/Neal.webp'
 
 const Testimonial = () => {
   return (
@@ -12,7 +12,7 @@ const Testimonial = () => {
           <div className='lg:w-1/2'>
           
             <div className="flex flex-col items-center justify-center lg:mx-10">
-            <Image src={neal} alt="Neal-Horn" className="w-24 rounded-md -mb-8 z-10" />
+            <Image src={neal} alt="Neal-Horn" quality={80} className="w-24 rounded-md -mb-8 z-10" />
             <div className="flex flex-col items-center p-8 shadow-md rounded-sm border-[rgba(0,0,0,0.13)] border-[1px] border-t-0 bg-white">
               <h4 className="font-bold mt-2 lg:text-lg">Dr. Neal Horn</h4>
               <span className="mb-4 lg:text-lg">SOUTHSIDE ENDODONTICS</span>
