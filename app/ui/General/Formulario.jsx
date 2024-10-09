@@ -178,6 +178,7 @@ const Formulario = () => {
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-celesteSecundario"
                         placeholderText="Select day and time"
                         minDate={new Date(Date.now() + 48 * 60 * 60 * 1000)} // 48 horas en milisegundos
+                        required                      
                       />
 
                     </div>
